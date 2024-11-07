@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/adimarta/paoo/tema1/src/Inventory -I/home/adimarta/paoo/tema1/src/Item
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=c++14
 

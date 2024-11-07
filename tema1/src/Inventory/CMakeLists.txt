@@ -1,11 +1,6 @@
-# CMakeLists.txt pentru Inventory
-add_library(Inventory STATIC 
-    Inventory.cpp
-    Inventory.h
-)
+# Inventory module
+add_library(Inventory Inventory.cpp)
 
-# Include pentru Inventory
+# Link with Item as Inventory depends on Item
+target_link_libraries(Inventory PRIVATE Item)
 target_include_directories(Inventory PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-
-# Legăm Inventory de Item
-target_link_libraries(Inventory PUBLIC Item)

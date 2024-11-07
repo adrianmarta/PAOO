@@ -1,11 +1,6 @@
-# CMakeLists.txt pentru Product
-add_library(Product STATIC 
-    Product.cpp
-    Product.h
-)
+# Product module
+add_library(Product Product.cpp)
 
-# Include pentru Product
+# Link with Item since Product depends on Item
+target_link_libraries(Product PRIVATE Item)
 target_include_directories(Product PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-
-# Legăm Product de Item
-target_link_libraries(Product PUBLIC Item)

@@ -2,8 +2,10 @@
 
 Inventory::~Inventory() {
     for (auto item : items) {
-        item->removeReference();
+        delete item;
     }
+    items.clear();
+    std::cout<<"items deleted from inventory(heap memory cleared)\n";
 }
 
 void Inventory::addItem(Item* item) {

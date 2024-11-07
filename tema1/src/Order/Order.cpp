@@ -3,43 +3,39 @@
 
 Order::Order(const Order& other) {
     for (const auto& item : other.items) {
-        items.push_back(item);
-        item->addReference();
+        items.push_back(item->clone());
     }
 }
 
 Order& Order::operator=(const Order& other) {
     if (this != &other) {
         for (auto& item : items) {
-            item->removeReference();
+            delete item;
         }
         items.clear();
 
         for (const auto& item : other.items) {
-            items.push_back(item);
-            item->addReference();
+            items.push_back(item->clone());
         }
     }
-    std::cout<<"\n s-a efectuat deep copy folosind =\n";
+    std::cout << "\n Deep copy using operator=\n";
     return *this;
-
 }
 
 Order::~Order() {
     for (auto& item : items) {
-        item->removeReference();
+        delete item;
     }
-    std::cout<<"\n s-a apelat removeRefence in cadrul deconstructorului Order\n";
+    std::cout << "\n Order deleted\n";
 }
 
 void Order::addItem(Item* item) {
-    items.push_back(item);
-    item->addReference();
+    items.push_back(item->clone());
 }
 
 void Order::removeItem(int index) {
     if (index >= 0 && index < items.size()) {
-        items[index]->removeReference();
+        delete items[index];
         items.erase(items.begin() + index);
     }
 }

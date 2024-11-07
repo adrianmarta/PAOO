@@ -129,77 +129,44 @@ tema1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/build
 .PHONY : tema1/fast
 
-Inventory/Inventory.o: Inventory/Inventory.cpp.o
-.PHONY : Inventory/Inventory.o
+#=============================================================================
+# Target rules for targets named Product
 
-# target to build an object file
-Inventory/Inventory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o
-.PHONY : Inventory/Inventory.cpp.o
+# Build rule for target.
+Product: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Product
+.PHONY : Product
 
-Inventory/Inventory.i: Inventory/Inventory.cpp.i
-.PHONY : Inventory/Inventory.i
+# fast build rule for target.
+Product/fast:
+	$(MAKE) $(MAKESILENT) -f Product/CMakeFiles/Product.dir/build.make Product/CMakeFiles/Product.dir/build
+.PHONY : Product/fast
 
-# target to preprocess a source file
-Inventory/Inventory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Inventory/Inventory.cpp.i
-.PHONY : Inventory/Inventory.cpp.i
+#=============================================================================
+# Target rules for targets named Inventory
 
-Inventory/Inventory.s: Inventory/Inventory.cpp.s
-.PHONY : Inventory/Inventory.s
+# Build rule for target.
+Inventory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Inventory
+.PHONY : Inventory
 
-# target to generate assembly for a file
-Inventory/Inventory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Inventory/Inventory.cpp.s
-.PHONY : Inventory/Inventory.cpp.s
+# fast build rule for target.
+Inventory/fast:
+	$(MAKE) $(MAKESILENT) -f Inventory/CMakeFiles/Inventory.dir/build.make Inventory/CMakeFiles/Inventory.dir/build
+.PHONY : Inventory/fast
 
-Order/Order.o: Order/Order.cpp.o
-.PHONY : Order/Order.o
+#=============================================================================
+# Target rules for targets named Order
 
-# target to build an object file
-Order/Order.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Order/Order.cpp.o
-.PHONY : Order/Order.cpp.o
+# Build rule for target.
+Order: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Order
+.PHONY : Order
 
-Order/Order.i: Order/Order.cpp.i
-.PHONY : Order/Order.i
-
-# target to preprocess a source file
-Order/Order.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Order/Order.cpp.i
-.PHONY : Order/Order.cpp.i
-
-Order/Order.s: Order/Order.cpp.s
-.PHONY : Order/Order.s
-
-# target to generate assembly for a file
-Order/Order.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Order/Order.cpp.s
-.PHONY : Order/Order.cpp.s
-
-Product/Product.o: Product/Product.cpp.o
-.PHONY : Product/Product.o
-
-# target to build an object file
-Product/Product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Product/Product.cpp.o
-.PHONY : Product/Product.cpp.o
-
-Product/Product.i: Product/Product.cpp.i
-.PHONY : Product/Product.i
-
-# target to preprocess a source file
-Product/Product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Product/Product.cpp.i
-.PHONY : Product/Product.cpp.i
-
-Product/Product.s: Product/Product.cpp.s
-.PHONY : Product/Product.s
-
-# target to generate assembly for a file
-Product/Product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/Product/Product.cpp.s
-.PHONY : Product/Product.cpp.s
+# fast build rule for target.
+Order/fast:
+	$(MAKE) $(MAKESILENT) -f Order/CMakeFiles/Order.dir/build.make Order/CMakeFiles/Order.dir/build
+.PHONY : Order/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -233,16 +200,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Inventory"
+	@echo "... Order"
+	@echo "... Product"
 	@echo "... tema1"
-	@echo "... Inventory/Inventory.o"
-	@echo "... Inventory/Inventory.i"
-	@echo "... Inventory/Inventory.s"
-	@echo "... Order/Order.o"
-	@echo "... Order/Order.i"
-	@echo "... Order/Order.s"
-	@echo "... Product/Product.o"
-	@echo "... Product/Product.i"
-	@echo "... Product/Product.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

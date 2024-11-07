@@ -69,52 +69,10 @@ include CMakeFiles/tema1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tema1.dir/flags.make
 
-CMakeFiles/tema1.dir/Product/Product.cpp.o: CMakeFiles/tema1.dir/flags.make
-CMakeFiles/tema1.dir/Product/Product.cpp.o: Product/Product.cpp
-CMakeFiles/tema1.dir/Product/Product.cpp.o: CMakeFiles/tema1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tema1.dir/Product/Product.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/Product/Product.cpp.o -MF CMakeFiles/tema1.dir/Product/Product.cpp.o.d -o CMakeFiles/tema1.dir/Product/Product.cpp.o -c /home/adimarta/paoo/tema1/src/Product/Product.cpp
-
-CMakeFiles/tema1.dir/Product/Product.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tema1.dir/Product/Product.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adimarta/paoo/tema1/src/Product/Product.cpp > CMakeFiles/tema1.dir/Product/Product.cpp.i
-
-CMakeFiles/tema1.dir/Product/Product.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tema1.dir/Product/Product.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adimarta/paoo/tema1/src/Product/Product.cpp -o CMakeFiles/tema1.dir/Product/Product.cpp.s
-
-CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o: CMakeFiles/tema1.dir/flags.make
-CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o: Inventory/Inventory.cpp
-CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o: CMakeFiles/tema1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o -MF CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o.d -o CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o -c /home/adimarta/paoo/tema1/src/Inventory/Inventory.cpp
-
-CMakeFiles/tema1.dir/Inventory/Inventory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tema1.dir/Inventory/Inventory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adimarta/paoo/tema1/src/Inventory/Inventory.cpp > CMakeFiles/tema1.dir/Inventory/Inventory.cpp.i
-
-CMakeFiles/tema1.dir/Inventory/Inventory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tema1.dir/Inventory/Inventory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adimarta/paoo/tema1/src/Inventory/Inventory.cpp -o CMakeFiles/tema1.dir/Inventory/Inventory.cpp.s
-
-CMakeFiles/tema1.dir/Order/Order.cpp.o: CMakeFiles/tema1.dir/flags.make
-CMakeFiles/tema1.dir/Order/Order.cpp.o: Order/Order.cpp
-CMakeFiles/tema1.dir/Order/Order.cpp.o: CMakeFiles/tema1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tema1.dir/Order/Order.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/Order/Order.cpp.o -MF CMakeFiles/tema1.dir/Order/Order.cpp.o.d -o CMakeFiles/tema1.dir/Order/Order.cpp.o -c /home/adimarta/paoo/tema1/src/Order/Order.cpp
-
-CMakeFiles/tema1.dir/Order/Order.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tema1.dir/Order/Order.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adimarta/paoo/tema1/src/Order/Order.cpp > CMakeFiles/tema1.dir/Order/Order.cpp.i
-
-CMakeFiles/tema1.dir/Order/Order.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tema1.dir/Order/Order.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adimarta/paoo/tema1/src/Order/Order.cpp -o CMakeFiles/tema1.dir/Order/Order.cpp.s
-
 CMakeFiles/tema1.dir/main.cpp.o: CMakeFiles/tema1.dir/flags.make
 CMakeFiles/tema1.dir/main.cpp.o: main.cpp
 CMakeFiles/tema1.dir/main.cpp.o: CMakeFiles/tema1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tema1.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tema1.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/main.cpp.o -MF CMakeFiles/tema1.dir/main.cpp.o.d -o CMakeFiles/tema1.dir/main.cpp.o -c /home/adimarta/paoo/tema1/src/main.cpp
 
 CMakeFiles/tema1.dir/main.cpp.i: cmake_force
@@ -127,21 +85,19 @@ CMakeFiles/tema1.dir/main.cpp.s: cmake_force
 
 # Object files for target tema1
 tema1_OBJECTS = \
-"CMakeFiles/tema1.dir/Product/Product.cpp.o" \
-"CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o" \
-"CMakeFiles/tema1.dir/Order/Order.cpp.o" \
 "CMakeFiles/tema1.dir/main.cpp.o"
 
 # External object files for target tema1
 tema1_EXTERNAL_OBJECTS =
 
-tema1: CMakeFiles/tema1.dir/Product/Product.cpp.o
-tema1: CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o
-tema1: CMakeFiles/tema1.dir/Order/Order.cpp.o
 tema1: CMakeFiles/tema1.dir/main.cpp.o
 tema1: CMakeFiles/tema1.dir/build.make
+tema1: Product/libProduct.a
+tema1: Inventory/libInventory.a
+tema1: Order/libOrder.a
+tema1: Inventory/libInventory.a
 tema1: CMakeFiles/tema1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tema1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adimarta/paoo/tema1/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tema1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tema1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

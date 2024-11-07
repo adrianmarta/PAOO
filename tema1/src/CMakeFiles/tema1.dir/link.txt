@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/tema1.dir/Product/Product.cpp.o CMakeFiles/tema1.dir/Inventory/Inventory.cpp.o CMakeFiles/tema1.dir/Order/Order.cpp.o CMakeFiles/tema1.dir/main.cpp.o -o tema1 
+/usr/bin/c++ -rdynamic CMakeFiles/tema1.dir/main.cpp.o -o tema1  Product/libProduct.a Inventory/libInventory.a Order/libOrder.a Inventory/libInventory.a 

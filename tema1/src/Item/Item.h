@@ -2,7 +2,7 @@
 #define ITEM_H
 
 #include <string>
-#include<iostream>
+#include <iostream>
 
 class Item {
 public:
@@ -12,19 +12,8 @@ public:
     virtual double getPrice() const = 0;
     virtual Item* clone() const = 0;
 
-    void addReference() { ++refCount; }
-    void removeReference() {
-        if (--refCount == 0) {
-            std::cout<<"/n s-a produs eliberarea heap-ului(reference count=0) \n";
-            delete this;
-        }
-    }
-
 protected:
-    Item() : refCount(1) {}
-
-private:
-    int refCount;
+    Item() = default;
 };
 
 #endif // ITEM_H

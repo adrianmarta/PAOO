@@ -116,20 +116,6 @@ depend:
 	cd /home/adimarta/paoo/tema1/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Item/CMakeFiles/Item.dir/rule:
-	cd /home/adimarta/paoo/tema1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Item/CMakeFiles/Item.dir/rule
-.PHONY : Item/CMakeFiles/Item.dir/rule
-
-# Convenience name for target.
-Item: Item/CMakeFiles/Item.dir/rule
-.PHONY : Item
-
-# fast build rule for target.
-Item/fast:
-	cd /home/adimarta/paoo/tema1/src && $(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/build
-.PHONY : Item/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,7 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Item"
 .PHONY : help
 
 

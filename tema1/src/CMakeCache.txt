@@ -210,13 +210,7 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Dependencies for the target
-Inventory_LIB_DEPENDS:STATIC=general;Item;
-
-//Dependencies for the target
-Order_LIB_DEPENDS:STATIC=general;Product;general;Item;
-
-//Dependencies for the target
-Product_LIB_DEPENDS:STATIC=general;Item;
+Order_LIB_DEPENDS:STATIC=general;Inventory;
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/adimarta/paoo/tema1/src
@@ -341,7 +335,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
