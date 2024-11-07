@@ -1,0 +1,11 @@
+/home/adimarta/paoo/tema1/src/CMakeFiles/tema1.dir
+/home/adimarta/paoo/tema1/src/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/CMakeFiles/rebuild_cache.dir
+/home/adimarta/paoo/tema1/src/Item/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/Item/CMakeFiles/rebuild_cache.dir
+/home/adimarta/paoo/tema1/src/Product/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/Product/CMakeFiles/rebuild_cache.dir
+/home/adimarta/paoo/tema1/src/Order/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/Order/CMakeFiles/rebuild_cache.dir
+/home/adimarta/paoo/tema1/src/Inventory/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/Inventory/CMakeFiles/rebuild_cache.dir
