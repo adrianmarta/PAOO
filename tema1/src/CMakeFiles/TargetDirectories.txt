@@ -1,0 +1,3 @@
+/home/adimarta/paoo/tema1/src/CMakeFiles/tema1.dir
+/home/adimarta/paoo/tema1/src/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/tema1/src/CMakeFiles/rebuild_cache.dir

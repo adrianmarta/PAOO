@@ -1,0 +1,3 @@
+/home/adimarta/paoo/cmake/02/CMakeFiles/hello.dir
+/home/adimarta/paoo/cmake/02/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/cmake/02/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+/home/adimarta/paoo/cmake/myfolder/CMakeFiles/lib.dir
+/home/adimarta/paoo/cmake/myfolder/CMakeFiles/salut.dir
+/home/adimarta/paoo/cmake/myfolder/CMakeFiles/edit_cache.dir
+/home/adimarta/paoo/cmake/myfolder/CMakeFiles/rebuild_cache.dir
