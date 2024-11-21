@@ -1,11 +1,27 @@
 #include "Product.h"
 
 Product::Product(const std::string& name, double price)
-    : name(name), price(price) {}
+    : name(name), price(price) {
+    std::cout << "Product created: " << name << "\n";
+}
 
-Product::Product(const Product& other)
-    : name(other.name), price(other.price) {}
+Product::Product(Product&& other) noexcept
+    : name(std::move(other.name)), price(other.price) {
+    std::cout << "Product moved: " << name << "\n";
+}
 
-std::string Product::getName() const { return name; }
-double Product::getPrice() const { return price; }
-Product* Product::clone() const { return new Product(*this); }
+Product::~Product() {
+    std::cout << "Product destroyed: " << name << "\n";
+}
+
+std::string Product::getName() const {
+    return name;
+}
+
+double Product::getPrice() const {
+    return price;
+}
+
+Product* Product::clone() const {
+    return new Product(name, price);
+}

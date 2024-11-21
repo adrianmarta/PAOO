@@ -1,32 +1,41 @@
 #include "Order.h"
 #include <iostream>
 
+
+Order::Order() = default;
+
+// Copy constructor
 Order::Order(const Order& other) {
     for (const auto& item : other.items) {
         items.push_back(item->clone());
     }
+    std::cout << "Order copied (copy constructor)\n";
 }
 
+// Copy assignment operator
 Order& Order::operator=(const Order& other) {
     if (this != &other) {
         for (auto& item : items) {
             delete item;
         }
         items.clear();
-
         for (const auto& item : other.items) {
             items.push_back(item->clone());
         }
     }
-    std::cout << "\n Deep copy using operator=\n";
+    std::cout << "Order copied (assignment operator)\n";
     return *this;
 }
+
+
+
+
 
 Order::~Order() {
     for (auto& item : items) {
         delete item;
     }
-    std::cout << "\n Order deleted\n";
+    std::cout << "Order destroyed\n";
 }
 
 void Order::addItem(Item* item) {

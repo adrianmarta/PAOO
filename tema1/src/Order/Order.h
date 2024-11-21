@@ -3,12 +3,18 @@
 
 #include "../Item/Item.h"
 #include <vector>
+#include <iostream>
 
+// Class definition
 class Order {
 public:
-    Order() = default;
-    Order(const Order& other);
-    Order& operator=(const Order& other);
+    Order();
+    Order(const Order& other);               // Copy constructor
+    Order& operator=(const Order& other);    // Copy assignment operator
+
+    Order(Order&& other) = delete;           // Deleted move constructor
+ 
+
     ~Order();
 
     void addItem(Item* item);
