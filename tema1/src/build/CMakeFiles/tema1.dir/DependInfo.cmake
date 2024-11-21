@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/alina/Desktop/adi/PAOO/tema1/src/build/Item/CMakeFiles/Item.dir/DependInfo.cmake"
   "/home/alina/Desktop/adi/PAOO/tema1/src/build/Product/CMakeFiles/Product.dir/DependInfo.cmake"
   "/home/alina/Desktop/adi/PAOO/tema1/src/build/Inventory/CMakeFiles/Inventory.dir/DependInfo.cmake"
   "/home/alina/Desktop/adi/PAOO/tema1/src/build/Order/CMakeFiles/Order.dir/DependInfo.cmake"

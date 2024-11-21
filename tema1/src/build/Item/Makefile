@@ -116,6 +116,44 @@ depend:
 	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Item/CMakeFiles/Item.dir/rule:
+	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Item/CMakeFiles/Item.dir/rule
+.PHONY : Item/CMakeFiles/Item.dir/rule
+
+# Convenience name for target.
+Item: Item/CMakeFiles/Item.dir/rule
+.PHONY : Item
+
+# fast build rule for target.
+Item/fast:
+	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/build
+.PHONY : Item/fast
+
+Item.o: Item.cpp.o
+.PHONY : Item.o
+
+# target to build an object file
+Item.cpp.o:
+	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/Item.cpp.o
+.PHONY : Item.cpp.o
+
+Item.i: Item.cpp.i
+.PHONY : Item.i
+
+# target to preprocess a source file
+Item.cpp.i:
+	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/Item.cpp.i
+.PHONY : Item.cpp.i
+
+Item.s: Item.cpp.s
+.PHONY : Item.s
+
+# target to generate assembly for a file
+Item.cpp.s:
+	cd /home/alina/Desktop/adi/PAOO/tema1/src/build && $(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/Item.cpp.s
+.PHONY : Item.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Item"
+	@echo "... Item.o"
+	@echo "... Item.i"
+	@echo "... Item.s"
 .PHONY : help
 
 

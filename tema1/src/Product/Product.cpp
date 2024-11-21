@@ -1,27 +1,28 @@
 #include "Product.h"
 
-Product::Product(const std::string& name, double price)
-    : name(name), price(price) {
-    std::cout << "Product created: " << name << "\n";
-}
-
-Product::Product(Product&& other) noexcept
-    : name(std::move(other.name)), price(other.price) {
-    std::cout << "Product moved: " << name << "\n";
+Product::Product(const std::string& name, double price, const std::string& category)
+    : Item(name, price), category(category) {
+    std::cout << "derived constructor called for: " << name << " in category: " << category << "\n";
 }
 
 Product::~Product() {
-    std::cout << "Product destroyed: " << name << "\n";
+    std::cout << "Product destructor called for: " << name << " in category: " << category << "\n";
 }
+
+
+
+// Move constructor
+Product::Product(Product&& other) noexcept
+    : Item(std::move(other)), category(std::move(other.category)) {
+    std::cout << "Product move constructor called for: " << name << " in category: " << category << "\n";
+}
+
+
 
 std::string Product::getName() const {
-    return name;
-}
-
-double Product::getPrice() const {
-    return price;
+    return name + " (" + category + ")";
 }
 
 Product* Product::clone() const {
-    return new Product(name, price);
+    return new Product(name,price,category);
 }

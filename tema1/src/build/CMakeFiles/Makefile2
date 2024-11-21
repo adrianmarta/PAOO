@@ -104,7 +104,7 @@ Inventory/clean: Inventory/CMakeFiles/Inventory.dir/clean
 # Directory level rules for directory Item
 
 # Recursive "all" directory target.
-Item/all:
+Item/all: Item/CMakeFiles/Item.dir/all
 .PHONY : Item/all
 
 # Recursive "preinstall" directory target.
@@ -112,7 +112,7 @@ Item/preinstall:
 .PHONY : Item/preinstall
 
 # Recursive "clean" directory target.
-Item/clean:
+Item/clean: Item/CMakeFiles/Item.dir/clean
 .PHONY : Item/clean
 
 #=============================================================================
@@ -149,17 +149,18 @@ Product/clean: Product/CMakeFiles/Product.dir/clean
 # Target rules for target CMakeFiles/tema1.dir
 
 # All Build rule for target.
+CMakeFiles/tema1.dir/all: Item/CMakeFiles/Item.dir/all
 CMakeFiles/tema1.dir/all: Product/CMakeFiles/Product.dir/all
 CMakeFiles/tema1.dir/all: Inventory/CMakeFiles/Inventory.dir/all
 CMakeFiles/tema1.dir/all: Order/CMakeFiles/Order.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=7,8 "Built target tema1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=9,10 "Built target tema1"
 .PHONY : CMakeFiles/tema1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tema1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tema1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/tema1.dir/rule
@@ -174,18 +175,44 @@ CMakeFiles/tema1.dir/clean:
 .PHONY : CMakeFiles/tema1.dir/clean
 
 #=============================================================================
+# Target rules for target Item/CMakeFiles/Item.dir
+
+# All Build rule for target.
+Item/CMakeFiles/Item.dir/all:
+	$(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/depend
+	$(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=3,4 "Built target Item"
+.PHONY : Item/CMakeFiles/Item.dir/all
+
+# Build rule for subdir invocation for target.
+Item/CMakeFiles/Item.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Item/CMakeFiles/Item.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 0
+.PHONY : Item/CMakeFiles/Item.dir/rule
+
+# Convenience name for target.
+Item: Item/CMakeFiles/Item.dir/rule
+.PHONY : Item
+
+# clean rule for target.
+Item/CMakeFiles/Item.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/clean
+.PHONY : Item/CMakeFiles/Item.dir/clean
+
+#=============================================================================
 # Target rules for target Product/CMakeFiles/Product.dir
 
 # All Build rule for target.
-Product/CMakeFiles/Product.dir/all:
+Product/CMakeFiles/Product.dir/all: Item/CMakeFiles/Item.dir/all
 	$(MAKE) $(MAKESILENT) -f Product/CMakeFiles/Product.dir/build.make Product/CMakeFiles/Product.dir/depend
 	$(MAKE) $(MAKESILENT) -f Product/CMakeFiles/Product.dir/build.make Product/CMakeFiles/Product.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=5,6 "Built target Product"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=7,8 "Built target Product"
 .PHONY : Product/CMakeFiles/Product.dir/all
 
 # Build rule for subdir invocation for target.
 Product/CMakeFiles/Product.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Product/CMakeFiles/Product.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 0
 .PHONY : Product/CMakeFiles/Product.dir/rule
@@ -203,7 +230,7 @@ Product/CMakeFiles/Product.dir/clean:
 # Target rules for target Inventory/CMakeFiles/Inventory.dir
 
 # All Build rule for target.
-Inventory/CMakeFiles/Inventory.dir/all:
+Inventory/CMakeFiles/Inventory.dir/all: Item/CMakeFiles/Item.dir/all
 	$(MAKE) $(MAKESILENT) -f Inventory/CMakeFiles/Inventory.dir/build.make Inventory/CMakeFiles/Inventory.dir/depend
 	$(MAKE) $(MAKESILENT) -f Inventory/CMakeFiles/Inventory.dir/build.make Inventory/CMakeFiles/Inventory.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=1,2 "Built target Inventory"
@@ -211,7 +238,7 @@ Inventory/CMakeFiles/Inventory.dir/all:
 
 # Build rule for subdir invocation for target.
 Inventory/CMakeFiles/Inventory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Inventory/CMakeFiles/Inventory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 0
 .PHONY : Inventory/CMakeFiles/Inventory.dir/rule
@@ -229,15 +256,16 @@ Inventory/CMakeFiles/Inventory.dir/clean:
 # Target rules for target Order/CMakeFiles/Order.dir
 
 # All Build rule for target.
+Order/CMakeFiles/Order.dir/all: Item/CMakeFiles/Item.dir/all
 Order/CMakeFiles/Order.dir/all: Inventory/CMakeFiles/Inventory.dir/all
 	$(MAKE) $(MAKESILENT) -f Order/CMakeFiles/Order.dir/build.make Order/CMakeFiles/Order.dir/depend
 	$(MAKE) $(MAKESILENT) -f Order/CMakeFiles/Order.dir/build.make Order/CMakeFiles/Order.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=3,4 "Built target Order"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles --progress-num=5,6 "Built target Order"
 .PHONY : Order/CMakeFiles/Order.dir/all
 
 # Build rule for subdir invocation for target.
 Order/CMakeFiles/Order.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Order/CMakeFiles/Order.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Desktop/adi/PAOO/tema1/src/build/CMakeFiles 0
 .PHONY : Order/CMakeFiles/Order.dir/rule

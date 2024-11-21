@@ -130,6 +130,19 @@ tema1/fast:
 .PHONY : tema1/fast
 
 #=============================================================================
+# Target rules for targets named Item
+
+# Build rule for target.
+Item: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Item
+.PHONY : Item
+
+# fast build rule for target.
+Item/fast:
+	$(MAKE) $(MAKESILENT) -f Item/CMakeFiles/Item.dir/build.make Item/CMakeFiles/Item.dir/build
+.PHONY : Item/fast
+
+#=============================================================================
 # Target rules for targets named Product
 
 # Build rule for target.
@@ -201,6 +214,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Inventory"
+	@echo "... Item"
 	@echo "... Order"
 	@echo "... Product"
 	@echo "... tema1"

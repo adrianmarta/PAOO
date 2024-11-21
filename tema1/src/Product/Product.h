@@ -7,21 +7,19 @@
 
 class Product : public Item {
 public:
-    Product(const std::string& name, double price);
-    Product(Product&& other) noexcept;  // Move constructor
+    Product(const std::string& name, double price, const std::string& category);
     ~Product();
 
-    // Deleted copy operations
-    Product(const Product& other) = delete;
-    Product& operator=(const Product& other) = delete;
+    // Copy and move constructors/operators
+    
+    Product(Product&& other) noexcept;
+    
 
-    std::string getName() const override;
-    double getPrice() const override;
+    std::string getName() const override; // Override for category
     Product* clone() const override;
 
 private:
-    std::string name;
-    double price;
+    std::string category;
 };
 
 #endif // PRODUCT_H

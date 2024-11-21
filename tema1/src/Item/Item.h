@@ -6,14 +6,24 @@
 
 class Item {
 public:
-    virtual ~Item() = default;
+    Item(const std::string& name, double price);
+    virtual ~Item();
+
+    // Virtual methods with default implementation
+    virtual std::string getName() const;
+    virtual double getPrice() const;
+
+    // Concrete clone implementation for `Item`
+    virtual Item* clone() const;
+
     
-    virtual std::string getName() const = 0;
-    virtual double getPrice() const = 0;
-    virtual Item* clone() const = 0;
+    
+    Item(Item&& other) noexcept;
+    
 
 protected:
-    Item() = default;
+    std::string name;
+    double price;
 };
 
 #endif // ITEM_H

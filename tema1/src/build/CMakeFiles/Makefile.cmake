@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tema1.dir/DependInfo.cmake"
+  "Item/CMakeFiles/Item.dir/DependInfo.cmake"
   "Product/CMakeFiles/Product.dir/DependInfo.cmake"
   "Inventory/CMakeFiles/Inventory.dir/DependInfo.cmake"
   "Order/CMakeFiles/Order.dir/DependInfo.cmake"

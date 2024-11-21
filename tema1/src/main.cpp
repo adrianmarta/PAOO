@@ -5,13 +5,14 @@
 
 int main() {
     // Demonstrating move constructor for Product
-    Product p1("Laptop", 1200.50);
+    Product p1("Lenovo", 1200.50,"Laptop");
     Product p2 = std::move(p1);  // Move constructor is called
+    Item i1("mouse",100.00);
 
     // Demonstrating copy constructor for Order
     Inventory inventory;
-    inventory.addItem(new Product("Phone", 899.99));
-    inventory.addItem(new Product("Headphones", 299.99));
+    inventory.addItem(new Product("IPhone", 899.99,"phone"));
+    inventory.addItem(new Product("Headphones", 299.99,"accesories"));
 
     Order order1;
     order1.addItem(inventory.getItem(0));

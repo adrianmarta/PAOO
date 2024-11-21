@@ -210,7 +210,13 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Dependencies for the target
-Order_LIB_DEPENDS:STATIC=general;Inventory;
+Inventory_LIB_DEPENDS:STATIC=general;Item;
+
+//Dependencies for the target
+Order_LIB_DEPENDS:STATIC=general;Item;general;Inventory;
+
+//Dependencies for the target
+Product_LIB_DEPENDS:STATIC=general;Item;
 
 //Value Computed by CMake
 tema1_BINARY_DIR:STATIC=/home/alina/Desktop/adi/PAOO/tema1/src/build
