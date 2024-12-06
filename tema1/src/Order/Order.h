@@ -1,28 +1,26 @@
 #ifndef ORDER_H
 #define ORDER_H
 
-#include "../Item/Item.h"
 #include <vector>
-#include <iostream>
+#include <memory> // Include for shared_ptr
+#include <mutex>  // For std::mutex
+#include "../Item/Item.h"
 
-// Class definition
 class Order {
 public:
-    Order();
-    Order(const Order& other);               // Copy constructor
-    Order& operator=(const Order& other);    // Copy assignment operator
+    Order() = default;
+    Order(const Order& other);            // Copy constructor
+    Order& operator=(const Order& other); // Copy assignment operator
+    ~Order() = default;
 
-    Order(Order&& other) = delete;           // Deleted move constructor
- 
-
-    ~Order();
-
-    void addItem(Item* item);
+    void addItem(std::shared_ptr<Item> item); // Accept shared_ptr
     void removeItem(int index);
     void listItems() const;
+    size_t getSize() const; // New function for order size
 
 private:
-    std::vector<Item*> items;
+    std::vector<std::shared_ptr<Item>> items;
+    mutable std::mutex orderMutex; // Mutex for thread-safe access to items
 };
 
 #endif // ORDER_H

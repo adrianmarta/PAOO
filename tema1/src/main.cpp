@@ -2,30 +2,35 @@
 #include "Product/Product.h"
 #include "Order/Order.h"
 #include <iostream>
+#include <memory>
+
+#include <iostream>
+#include <thread>
+
+
+void threadFunction(Inventory& inventory) {
+    auto item = inventory.getItem(0);
+    if (item) {
+        std::cout << "Thread got item: " << item->getName() << std::endl;
+    }
+}
 
 int main() {
-    // Demonstrating move constructor for Product
-    Product p1("Lenovo", 1200.50,"Laptop");
-    Product p2 = std::move(p1);  // Move constructor is called
-    Item i1("mouse",100.00);
-
-    // Demonstrating copy constructor for Order
     Inventory inventory;
-    inventory.addItem(new Product("IPhone", 899.99,"phone"));
-    inventory.addItem(new Product("Headphones", 299.99,"accesories"));
+    inventory.addItem(std::make_unique<Product>("Item1", 10.0));
+    inventory.addItem(std::make_unique<Product>("Item2", 15.0));
 
-    Order order1;
-    order1.addItem(inventory.getItem(0));
-    order1.addItem(inventory.getItem(1));
+    Order order;
+    order.addItem(inventory.getItem(0));
+    order.addItem(inventory.getItem(1));
 
-    std::cout << "\nCopying order1 into order2 using copy constructor:\n";
-    Order order2 = order1;  // Copy constructor is called
+    // Simulate multithreaded access
+    std::thread t1(threadFunction, std::ref(inventory));
+    std::thread t2(threadFunction, std::ref(inventory));
 
-    std::cout << "\nOrder 1 items:\n";
-    order1.listItems();
-
-    std::cout << "\nOrder 2 items (copied):\n";
-    order2.listItems();
+    t1.join();
+    t2.join();
 
     return 0;
 }
+

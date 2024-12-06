@@ -2,28 +2,33 @@
 #define ITEM_H
 
 #include <string>
-#include <iostream>
+#include <memory>
 
 class Item {
-public:
-    Item(const std::string& name, double price);
-    virtual ~Item();
-
-    // Virtual methods with default implementation
-    virtual std::string getName() const;
-    virtual double getPrice() const;
-
-    // Concrete clone implementation for `Item`
-    virtual Item* clone() const;
-
-    
-    
-    Item(Item&& other) noexcept;
-    
-
-protected:
+private:
     std::string name;
     double price;
+
+public:
+    // Constructor
+    Item(const std::string& name, double price)
+        : name(name), price(price) {}
+
+    // Virtual Destructor
+    virtual ~Item() = default;
+
+    // Clone function
+    virtual std::shared_ptr<Item> clone() const {
+        return std::make_shared<Item>(*this);
+    }
+
+    // Virtual methods to allow overriding
+    virtual std::string getName() const { return name; }
+    virtual double getPrice() const { return price; }
+
+    // Setters
+    void setName(const std::string& newName) { name = newName; }
+    void setPrice(double newPrice) { price = newPrice; }
 };
 
 #endif // ITEM_H

@@ -2,24 +2,17 @@
 #define PRODUCT_H
 
 #include "../Item/Item.h"
-#include <string>
-#include <iostream>
 
 class Product : public Item {
 public:
-    Product(const std::string& name, double price, const std::string& category);
-    ~Product();
+    // Pass the name and price to the base class constructor
+    Product(const std::string& name, double price)
+        : Item(name, price) {}
 
-    // Copy and move constructors/operators
-    
-    Product(Product&& other) noexcept;
-    
-
-    std::string getName() const override; // Override for category
-    Product* clone() const override;
-
-private:
-    std::string category;
+    // Override clone to create a copy of Product
+    std::shared_ptr<Item> clone() const override {
+        return std::make_shared<Product>(*this);
+    }
 };
 
 #endif // PRODUCT_H
